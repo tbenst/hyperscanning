@@ -1,0 +1,11 @@
+Requires the Functional Programming Constructs installed from Add-on Explorer.
+Several non-free toolboxes (Signal processing, Statistics, and Econometrics) also required
+Code tested on MATLAB 2017a--older versions may not work
+
+Example command:
+fileSelection = 0; timeSelection = 2; onlyPreOT = 0; saveFig = 'no'; scriptToRun='hyperscanningControl.m'; master();
+
+Second example:
+reset(); fileSelection = 4; timeSelection = 1; onlyPreOT = 0; scriptToRun='forecasting.m'; master();
+
+

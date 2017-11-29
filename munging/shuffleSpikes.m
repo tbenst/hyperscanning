@@ -1,0 +1,6 @@
+function spikes = shuffleSpikes(Spikes)
+    % shuffles by interspike interval (lose one spike)
+    spikes = cellfun(@(unit) ...
+        cumsum(paren(diff(unit), randperm(length(unit)-1))), Spikes, ...
+        'UniformOutput', false);
+end
